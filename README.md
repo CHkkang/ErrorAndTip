@@ -7,32 +7,24 @@ mysql 유저 권한 주기 https://blusky10.tistory.com/362
 
 DB 별 count
 
-postgres 
+postgres, cubrid, oracle, mysql, tibero
+```
   SELECT COUNT(*) FROM TABLE_NAME
-
-cubrid
-  SELECT COUNT(*) FROM TABLE_NAME
-
-oracle
-  SELECT COUNT(*) FROM TABLE_NAME
-
-mysql
-  SELECT COUNT(*) FROM TABLE_NAME
-
-tibero
-  SELECT COUNT (*) FROM TABLE_NAME;
+```
 
 
 
 DB별 pagination
 
 POSTGRES
-  SELECT * from TABLE_NAME OFFSET 0 limit 20;
-
+```
+SELECT * from TABLE_NAME OFFSET 0 limit 20;
+```
 CUBRID
-  SELECT * FROM TABLE_NAME BETWEEN 1 AND 10;
-  SELECT * FROM TABLE_NAME LIMIT ?1,?2
-
+```
+1. SELECT * FROM TABLE_NAME BETWEEN 1 AND 10;
+2. SELECT * FROM TABLE_NAME LIMIT ?1,?2
+```
 OCRACLE 12버전 이전(ROWNUM 이용)
 ```
   SELECT *
@@ -49,10 +41,14 @@ OCRACLE 12버전 이전(ROWNUM 이용)
 	    101 <= RNUM
 ```
 OCRACLE 12버전 이후(TOP-N QUERY 이용)
-  SELECT * FROM TABLE_NAME OFFSET 6 ROWS FETCH FIRST 5 ROWS ONLY;
-
+```
+SELECT * FROM TABLE_NAME OFFSET 6 ROWS FETCH FIRST 5 ROWS ONLY;
+```
 MYSQL
-  SELECT * FROM TABLE_NAME LIMIT 0, 10
-
+```
+SELECT * FROM TABLE_NAME LIMIT 0, 10
+```
 Tibero
-  oracle 12버전 이전
+```
+oracle 12버전 이전
+```
