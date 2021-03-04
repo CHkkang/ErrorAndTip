@@ -1,10 +1,10 @@
-# errorCheck
+## ErrorAndTips
 내가보려고만듬
 
-
+## errorCheck
 mysql 유저 권한 주기 https://blusky10.tistory.com/362
 
-
+## Tips
 DB 별 count
 
 postgres, cubrid, oracle, mysql, tibero
