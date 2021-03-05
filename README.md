@@ -50,5 +50,5 @@ SELECT * FROM TABLE_NAME LIMIT 0, 10
 ```
 Tibero
 ```
-oracle 12버전 이전
+oracle 12버전 이전과 동일
 ```
