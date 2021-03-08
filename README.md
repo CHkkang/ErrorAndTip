@@ -11,7 +11,7 @@ postgres, cubrid, oracle, mysql, tibero
 ```
   SELECT COUNT(*) FROM TABLE_NAME
 ```
-
+------------
 brew install mysql 시 에러
 ```
 ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
@@ -21,7 +21,7 @@ ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mys
 ```
 mysql.server start
 ```
-
+------------
 DB별 pagination
 
 POSTGRES
@@ -60,3 +60,4 @@ Tibero
 ```
 oracle 12버전 이전과 동일
 ```
+------------
